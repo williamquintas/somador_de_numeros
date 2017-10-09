@@ -4,7 +4,7 @@ CFLAGS = -Wextra
 DIR = src
 FILENAME = $(DIR)/main.c
 TARGET = ./main
-SRCS := $(shell find $(DIR) -name '*.c')
+SRCS := $(shell find $(DIR) -name '*.cpp')
 OBJS = $(SRCS:.c=.o)
 
 
