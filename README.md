@@ -1,11 +1,24 @@
-# Um pequeno somador
+# Somador de Números
 
-Esta é uma tarefa-template, que deve ser modificada para ser convertida em
-outras atividades. Aqui, fica o enunciado da tarefa, ou seja, sua descrição, com
-instruções claras sobre o problema que deve ser resolvido. Esta tarefa consiste
-em fazer um somador. Ele deverá receber uma linha de texto contendo dois números
-inteiros. Essa linha se encerra com caractere fim de linha `\n`. O programa
-deverá imprimir na saída padrão a soma desses dois números
+Nesta tarefa, o programa receberá como entrada um texto contendo diversas
+palavras e números. Deverá retornar, na saída, a soma de todos os números
+encontrados. Para isso, algumas regras deverão ser observadas:
+
+1. Um número só é válido se for precedido de espaços. Isso significa que
+   `PALAVRA123` não contém um número válido, mas `PALAVRA 123` contém.
+1. Um número deve ser seguido de espaço, caractere fim de linha ou fim de
+   arquivo, de forma que `123 PALAVRA` gera um número válido mas `123PALAVRA`
+   não gera.
+1. Um número pode estar em formato ponto flutuante. Assim, `0.123` é um número
+   válido. A omissão da parte inteira também é válida, e, portanto, `.123`
+   também é um número válido. Pela primeira regra, porém, `PALAVRA.123` não gera
+   um número válido.
+1. O número pode estar escrito na forma de um fatorial, se for inteiro. Isso
+   significa que `5!` representa o número 5 fatorial, isto é, 120.
+1. A saída do programa deve ser dada em formato ponto flutuante,
+   obrigatoriamente com duas casas decimais (ou seja, duas casas depois da
+   vírgula), seguida de um caractere quebra de linha `\n`.
+
 
 ## Como fazer uma outra tarefa usando este template
 1. Crie um repositório vazio no Github (sem inicializar o readme nem a licença)
@@ -39,8 +52,9 @@ deverá imprimir na saída padrão a soma desses dois números
 
 Entrada | Saida
 ------- | -----
-`1 2` | `3`
-`100 1` | `101`
+`1 2 3` | `6.00\n`
+`1.1 OLA MUNDO 12` | `13.10\n`
+`5 5OLA 3! 12.5 MUNDO` | `23.50\n`
 
 
 ## Instruções adicionais
