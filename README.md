@@ -19,35 +19,6 @@ encontrados. Para isso, algumas regras deverão ser observadas:
    obrigatoriamente com duas casas decimais (ou seja, duas casas depois da
    vírgula), seguida de um caractere quebra de linha `\n`.
 
-
-## Como fazer uma outra tarefa usando este template
-1. Crie um repositório vazio no Github (sem inicializar o readme nem a licença)
-   com o nome da sua tarefa usando a interface web. Vamos chamar esse
-   repositório com o nome fantasma de `foobar`.
-
-1. Faça um clone deste repositório para um diretório com o nome de sua tarefa.
-   Se sua tarefa se chama foobar, então a linha de comando é:
-   `git clone https://github.com/Beethoven-ED/template_unit_test.git foobar`
-
-1. Desvincule sua cópia local deste repositório:
-   `git remote remove origin`
-
-1. Vincule sua cópia local ao seu repositório no github:
-   `git remote add origin https://github.com/seu_username/foobar.git`
-
-1. Faça as modificações necessárias no código. Use `git add` e `git commit`
-   sempre que necessário. Lembre-se de:
-   * Modificar o enunciado
-   * Adicionar testes de unidade
-   * Adicionar um programa-template, se achar necessário.
-   * Testar se `make` e `make test` estão funcionando adequadamente.
-
-1. Quando terminar, envie suas modificações ao repositório: `git push
-   --set-upstream origin master` (a flag `--set-upstream origin master` só será
-   necessária da primeira vez que fizer o `push`).
-
-1. Verifique se as modificações estão todas no Github, no endereço correto.
-
 ## Exemplos
 
 Entrada | Saida
@@ -55,7 +26,6 @@ Entrada | Saida
 `1 2 3` | `6.00\n`
 `1.1 OLA MUNDO 12` | `13.10\n`
 `5 5OLA 3! 12.5 MUNDO` | `23.50\n`
-
 
 ## Instruções adicionais
 
